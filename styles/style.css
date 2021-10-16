@@ -1,1 +1,252 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+.active {
+  border-bottom: 3px solid #20ace4;
+}
+
+.container {
+  height: 100%;
+  width: 90%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #20ace4;
+}
+
+body .outerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body .outerContainer .innerContainer {
+  width: 90vw;
+  min-height: 450vh;
+  overflow: visible;
+  scroll-behavior: smooth;
+  background-color: #ebebeb;
+  margin-top: 60px;
+}
+
+body .outerContainer .innerContainer header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  background-color: #ebebeb;
+  -webkit-box-shadow: 0 0 2px 1px #20ace4;
+          box-shadow: 0 0 2px 1px #20ace4;
+  z-index: 1000;
+}
+
+body .outerContainer .innerContainer header .container {
+  padding: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .outerContainer .innerContainer header .container nav {
+  margin: 0;
+}
+
+body .outerContainer .innerContainer header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body .outerContainer .innerContainer header .container nav ul li {
+  margin: 10px;
+}
+
+body .outerContainer .innerContainer header .container nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  display: block;
+  padding: 5px 10px;
+}
+
+body .outerContainer .innerContainer header .container nav ul li a:hover {
+  background-color: transparent;
+}
+
+body .outerContainer .innerContainer section {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .outerContainer .innerContainer .home {
+  background-color: #000;
+  min-height: 500px;
+  padding-top: 50px;
+}
+
+body .outerContainer .innerContainer .home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .outerContainer .innerContainer .home .container .content {
+  color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+}
+
+body .outerContainer .innerContainer .home .container .content p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+body .outerContainer .innerContainer .home .container .content .pt {
+  margin-top: 20px;
+  width: 53ch;
+}
+
+body .outerContainer .innerContainer .home .container .content span {
+  width: 550px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body .outerContainer .innerContainer .home .container .content span h1 {
+  font-size: 3.5rem;
+  -webkit-text-stroke: 2px #ebebeb;
+  color: transparent;
+}
+
+body .outerContainer .innerContainer .home .container .content span p {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+body .outerContainer .innerContainer .home .container .content h3 {
+  margin-left: 260px;
+  font-size: 1.5rem;
+  -webkit-text-stroke: 1px #20ace4;
+  color: transparent;
+}
+
+body .outerContainer .innerContainer .home .container .content .links {
+  margin-top: 20px;
+}
+
+body .outerContainer .innerContainer .home .container .content .links a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #20ace4;
+  padding: 5px 15px;
+  color: #000;
+  margin-right: 20px;
+}
+
+body .outerContainer .innerContainer .home .container .banner {
+  width: 550px;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  overflow: hidden;
+}
+
+body .outerContainer .innerContainer .home .container .banner .imgBox {
+  position: relative;
+  left: 50px;
+  width: 370px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body .outerContainer .innerContainer .home .container .banner .imgBox img {
+  position: relative;
+  top: -60px;
+  left: -100px;
+  width: 900px;
+  height: 500px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body .outerContainer .innerContainer .home .container .banner:hover .imgBox {
+  left: 40px;
+}
+
+body .outerContainer .innerContainer .home .container .banner:hover .imgBox img {
+  top: -40px;
+  left: -80px;
+}
+/*# sourceMappingURL=style.css.map */
