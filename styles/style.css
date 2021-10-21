@@ -227,7 +227,7 @@ body .outerContainer .innerContainer .home .container .banner .imgBox {
   left: 50px;
   width: 370px;
   height: 270px;
-  border-radius: 50%;
+  border-radius: 70% 30% 43% 57% / 55% 32% 68% 45%;
   background-color: #ebebeb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,7 +343,6 @@ body .outerContainer .innerContainer .projects h2 {
 }
 
 body .outerContainer .innerContainer .projects .container {
-  background-color: #ebebeb;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,9 +358,87 @@ body .outerContainer .innerContainer .projects .container {
 }
 
 body .outerContainer .innerContainer .projects .container .projectBox {
-  width: 300px;
+  border: 1px solid #20ace4;
+  border-bottom: none;
+  width: 250px;
   height: 400px;
-  background-color: blue;
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .projectImg {
+  width: 100%;
+  height: 250px;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .projectImg img {
+  width: 100%;
+  height: 100%;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .projectAbout {
+  width: 100%;
+  padding: 0 10px;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .projectAbout h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .projectAbout p {
+  color: #ebebeb;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .btn {
+  width: 100%;
+  justify-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .btn a {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #20ace4;
+  color: #ebebeb;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-size: 12px;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox .btn a:hover {
+  top: -5px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+body .outerContainer .innerContainer .projects .container .projectBox:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 /*# sourceMappingURL=style.css.map */
