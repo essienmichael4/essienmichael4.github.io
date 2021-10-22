@@ -114,7 +114,6 @@ body{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    // height: 100%;
 
                     .content{
                         color: $primaryColor;
@@ -170,14 +169,12 @@ body{
                     }
 
                     .banner{
-                        // background-color: yellow;
                         width: 550px;
                         height: 60vh;
                         display: flex;
                         align-items: center;
                         padding: 50px;
                         overflow: hidden;
-                        // transition: all 5s ease-in-out;
 
                         .imgBox{
                             position: relative;
@@ -279,7 +276,6 @@ body{
                 align-items: center;
 
                 h2{
-                    // margin-top: 60px;
                     margin-left: 60px;
                     align-self: flex-start;
                     color: $accentColor;
@@ -368,10 +364,8 @@ body{
                 flex-direction: column;
                 padding-top: 60px;
                 align-items: center;
-                // background-color: blueviolet;
 
                 h2{
-                    // margin-top: 60px;
                     margin-left: 60px;
                     align-self: flex-start;
                     color: $accentColor;
@@ -380,7 +374,6 @@ body{
                 }
 
                 .container{
-                    // background-color: cadetblue;
                     height: 400px;
                     display: flex;
                     flex-wrap: wrap;
@@ -393,7 +386,6 @@ body{
                         width: 50%;
                         min-width: 300px;
                         height: 100%;
-                        // background-color: $secColor;
                     }
 
                     .right{
@@ -401,7 +393,6 @@ body{
                         width: 40%;
                         min-width: 300px;
                         height: 100%;
-                        // background-color: $primaryColor;
 
                         form{
                             display: flex;
