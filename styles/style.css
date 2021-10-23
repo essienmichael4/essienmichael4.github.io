@@ -119,6 +119,83 @@ body .outerContainer .innerContainer header .container nav ul li a:hover {
   background-color: transparent;
 }
 
+body .outerContainer .innerContainer header .container nav ul .closemenu {
+  display: block;
+}
+
+body .outerContainer .innerContainer header .container .openmenu .menu {
+  font-size: 2rem;
+  margin: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  body .outerContainer .innerContainer header nav {
+    position: absolute;
+    top: -60px;
+    left: -29px;
+    width: 100vw;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+  }
+  body .outerContainer .innerContainer header nav ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .outerContainer .innerContainer header nav ul a {
+    width: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .outerContainer .innerContainer header nav ul .closemenu {
+    position: absolute;
+    right: 90px;
+    top: 85px;
+    color: white;
+  }
+  body .outerContainer .innerContainer header nav ul .closemenu .close {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 780px) {
+  body .outerContainer .innerContainer header nav ul .closemenu {
+    display: none;
+  }
+  body .outerContainer .innerContainer header nav ul .closemenu .close {
+    display: none;
+  }
+  body .outerContainer .innerContainer .openmenu {
+    display: none;
+  }
+  body .outerContainer .innerContainer .openmenu .menu {
+    display: none;
+  }
+}
+
 body .outerContainer .innerContainer section {
   width: 100%;
   min-height: 100vh;
@@ -134,6 +211,7 @@ body .outerContainer .innerContainer .home {
   background-color: #000;
   min-height: 500px;
   padding-top: 50px;
+  overflow: hidden;
 }
 
 body .outerContainer .innerContainer .home .container {
@@ -149,6 +227,7 @@ body .outerContainer .innerContainer .home .container {
 }
 
 body .outerContainer .innerContainer .home .container .content {
+  width: 55%;
   color: #ebebeb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +290,7 @@ body .outerContainer .innerContainer .home .container .content .links a {
 }
 
 body .outerContainer .innerContainer .home .container .banner {
-  width: 550px;
+  width: 40%;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,13 +298,11 @@ body .outerContainer .innerContainer .home .container .banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px;
-  overflow: hidden;
 }
 
 body .outerContainer .innerContainer .home .container .banner .imgBox {
   position: relative;
-  left: 50px;
+  left: 0px;
   width: 370px;
   height: 270px;
   border-radius: 70% 30% 43% 57% / 55% 32% 68% 45%;
@@ -239,20 +316,117 @@ body .outerContainer .innerContainer .home .container .banner .imgBox {
 
 body .outerContainer .innerContainer .home .container .banner .imgBox img {
   position: relative;
-  top: -60px;
-  left: -100px;
-  width: 900px;
+  top: -40px;
+  left: -50px;
+  width: 800px;
   height: 500px;
   -webkit-transition: .8s ease;
   transition: .8s ease;
 }
 
 body .outerContainer .innerContainer .home .container .banner:hover .imgBox {
-  left: 90px;
+  left: 70px;
 }
 
 body .outerContainer .innerContainer .home .container .banner:hover .imgBox img {
   left: -180px;
+}
+
+@media (max-width: 1215px) {
+  body .outerContainer .innerContainer .home .container .content h3 {
+    margin-left: 200px;
+  }
+  body .outerContainer .innerContainer .home .container .banner .imgBox {
+    width: 350px;
+  }
+  body .outerContainer .innerContainer .home .container .banner .imgBox img {
+    left: -80px;
+    width: 750px;
+    height: 450px;
+  }
+  body .outerContainer .innerContainer .home .container .banner:hover .imgBox {
+    left: 50px;
+  }
+  body .outerContainer .innerContainer .home .container .banner:hover .imgBox img {
+    left: -180px;
+  }
+}
+
+@media (max-width: 1115px) {
+  body .outerContainer .innerContainer .home .container .banner:hover .imgBox {
+    left: 20px;
+  }
+  body .outerContainer .innerContainer .home .container .banner:hover .imgBox img {
+    left: -150px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body .outerContainer .innerContainer .home {
+    padding-top: 50px;
+    min-height: 400px;
+    width: 100%;
+    min-width: 300px;
+  }
+  body .outerContainer .innerContainer .home .container .content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .outerContainer .innerContainer .home .container .content h3 {
+    margin-left: 0px;
+  }
+  body .outerContainer .innerContainer .home .container .banner {
+    display: none;
+  }
+}
+
+@media (max-width: 603px) {
+  body .outerContainer .innerContainer .home .container .content {
+    width: 100%;
+  }
+  body .outerContainer .innerContainer .home .container .content p {
+    font-size: 12px;
+  }
+  body .outerContainer .innerContainer .home .container .content .pt {
+    width: 100%;
+  }
+  body .outerContainer .innerContainer .home .container .content span {
+    width: 100%;
+  }
+  body .outerContainer .innerContainer .home .container .content span h1 {
+    font-size: 2rem;
+  }
+  body .outerContainer .innerContainer .home .container .content span p {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+  body .outerContainer .innerContainer .home .container .content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body .outerContainer .innerContainer .home {
+    width: 100%;
+  }
+  body .outerContainer .innerContainer .home .container .content {
+    width: 100%;
+  }
+  body .outerContainer .innerContainer .home .container .content span h1 {
+    font-size: 1.7rem;
+  }
+  body .outerContainer .innerContainer .home .container .content span p {
+    margin-top: 5px;
+  }
 }
 
 body .outerContainer .innerContainer .about {
@@ -320,6 +494,28 @@ body .outerContainer .innerContainer .about .container .right h3 {
 
 body .outerContainer .innerContainer .about .container .right p {
   margin-bottom: 20px;
+}
+
+@media (max-width: 740px) {
+  body .outerContainer .innerContainer .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .outerContainer .innerContainer .about .container .left {
+    width: 80%;
+  }
+  body .outerContainer .innerContainer .about .container .right {
+    width: 80%;
+    padding-top: 0px;
+  }
 }
 
 body .outerContainer .innerContainer .projects {
@@ -599,5 +795,29 @@ body .outerContainer .innerContainer .contact .container .right form button {
 body .outerContainer .innerContainer .contact .container .right form button:hover {
   color: #20ace4;
   background-color: #ebebeb;
+}
+
+@media (max-width: 1126px) {
+  body .outerContainer .innerContainer {
+    height: 430vh;
+  }
+}
+
+@media (max-width: 925px) {
+  body .outerContainer .innerContainer {
+    height: 480vh;
+  }
+}
+
+@media (max-width: 740px) {
+  body .outerContainer .innerContainer {
+    height: 550vh;
+  }
+}
+
+@media (max-width: 617px) {
+  body .outerContainer .innerContainer {
+    height: 700vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

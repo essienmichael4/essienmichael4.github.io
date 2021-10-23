@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;900&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/92a1905d17.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Michael Essien</title>    
@@ -19,14 +21,24 @@
             <header>
                 <div class="container">
                     <h2>ME</h2>
+
+                    <div class="openmenu">
+                        <i class="fas fa-bars menu"></i>
+                    </div>
+
                     <nav>
                         <ul>
                             <li><a href="#home" class="active">Home</a></li>
                             <li><a href="#about">About Me</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#contact">Contact me</a></li>
+                            <div class="closemenu">
+                                <i class="fas fa-times close"></i>
+                            </div>
                         </ul>
                     </nav>
+                    
+                    
                 </div>
             </header>
 
@@ -155,19 +167,19 @@
                             action="https://formspree.io/f/mdoywqky"
                             method="POST"
                             >
-                            <h2>contact me</h2>
+                            <h2>Contact ME</h2>
                             <div>
                                 <div class="box">
-                                    <input placeholder="First Name" type="text" name="_firstname">
+                                    <input placeholder="First Name" type="text" name="_firstname" required>
                                 </div>
                                 <div class="box">
-                                    <input placeholder="Last Name" type="text" name="_lastname">
+                                    <input placeholder="Last Name" type="text" name="_lastname" required>
                                 </div>
                             </div>
                             
-                            <input placeholder="Email" type="email" name="_replyto">
+                            <input placeholder="Email" type="email" name="_replyto" required>
                             
-                            <textarea placeholder="Your message" name="message"></textarea>
+                            <textarea placeholder="Your message" name="message" required></textarea>
                             
                             <button type="submit">contact</i></button>
                         </form>
