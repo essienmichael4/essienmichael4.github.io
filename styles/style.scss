@@ -12,7 +12,7 @@ $secColor: #000;
 }
 
 .active{
-    border-bottom: 3px solid $accentColor;
+    border-bottom: 3px solid $secColor;
 }
 
 .container{
@@ -41,7 +41,6 @@ body{
             min-height: 450vh;
             overflow: visible;
             scroll-behavior: smooth;
-            // background-color: #ebebeb;
             margin-top: 60px;
             margin-bottom: 60px;
 
@@ -82,14 +81,18 @@ body{
                                 a{
                                     text-decoration: none;
                                     text-transform: uppercase;
-                                    color: $secColor;
-                                    background-color: white;
+                                    color: $primaryColor;
+                                    background-color: $accentColor;
                                     display: block;
                                     padding: 5px 10px;
+                                    font-weight: bold;
+                                    transition: .5s;
                                 }
 
                                 a:hover{
-                                    background-color: transparent;
+                                    background-color: $accentColor;
+                                    opacity: .5;
+                                    // color: $primaryColor;
                                 }
 
                                 .contactlink{
@@ -238,8 +241,9 @@ body{
 
                             h1{
                                 font-size: 3.5rem;
-                                -webkit-text-stroke: 2px $primaryColor;
-                                color: transparent; 
+                                // -webkit-text-stroke: 2px $primaryColor;
+                                color: $primaryColor;
+                                // color: transparent; 
                             }
                             
                             p{
@@ -252,8 +256,8 @@ body{
                         h3{
                             margin-left: 260px;
                             font-size: 1.5rem;
-                            -webkit-text-stroke: 1px $accentColor;
-                            color: transparent;
+                            // -webkit-text-stroke: 1px $accentColor;
+                            color: $accentColor;
                         }
 
                         .links{
@@ -264,7 +268,10 @@ body{
                                 display: inline-block;
                                 background-color: $accentColor;
                                 padding: 5px 15px;
-                                color: $secColor;
+                                font-weight: bold;
+                                font-size: 13px;
+                                // color: $secColor;
+                                color: $primaryColor;
                                 margin-right: 20px;
                                 border-radius: 5px;
                                 margin-bottom: 20px;
@@ -272,7 +279,7 @@ body{
                             
                             .contactlink{
                                 background-color: orangered;
-                                color: $primaryColor;
+                                
                                 border-radius: 5px;
                             }
                         }
@@ -903,7 +910,7 @@ body{
         @media (min-width:1440px) {
             .innerContainer{
                 width: 1440px;
-                min-height: 250vh;
+                min-height: 200vh;
 
                 .home{
                     height: 600px;
@@ -923,27 +930,35 @@ body{
             }
         }
 
+        @media (max-width:1440px) {
+            .innerContainer{
+                min-height: 380vh;
+            }
+        }
+
         @media (max-width:1126px) {
             .innerContainer{
-                height: 430vh;
+                min-height: 350vh;
             }
         }
 
         @media (max-width:925px) {
             .innerContainer{
-                height: 480vh;
+                min-height: 350vh;
             }
         }
 
         @media (max-width:740px) {
             .innerContainer{
-                height: 550vh;
+                min-height: 450vh;
             }
         }
 
         @media (max-width:617px) {
             .innerContainer{
-                height: 700vh;
+                margin-top: 0;
+                min-height: 450vh;
+                width: 100vw;
             }
         }
         
