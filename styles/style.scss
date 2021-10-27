@@ -134,7 +134,7 @@ body{
                         position: absolute;
                         top: -60px;
                         left: -29px;
-                        width: 100vw;
+                        width: 120vw;
                         height: 120vh;
                         background-color: rgba($color: #000000, $alpha: .95);
                         display: none;
@@ -176,6 +176,16 @@ body{
                 }
             }
 
+            
+
+            @media (max-width:780px){
+                header{
+                    nav{
+                        width: 105vw;
+                    }
+                }
+            }
+
             @media (min-width:780px){
                 header{
                     nav{
@@ -198,6 +208,15 @@ body{
                             display: none;
                         } 
                     }
+            }
+
+            @media (max-width:440px){
+                header{
+                    nav{
+                        right: 0;
+                        width: 120vw;
+                    }
+                }
             }
 
             section{

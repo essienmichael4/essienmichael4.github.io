@@ -149,7 +149,7 @@ body .outerContainer .innerContainer header .container .openmenu .menu {
     position: absolute;
     top: -60px;
     left: -29px;
-    width: 100vw;
+    width: 120vw;
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.95);
     display: none;
@@ -198,6 +198,12 @@ body .outerContainer .innerContainer header .container .openmenu .menu {
   }
 }
 
+@media (max-width: 780px) {
+  body .outerContainer .innerContainer header nav {
+    width: 105vw;
+  }
+}
+
 @media (min-width: 780px) {
   body .outerContainer .innerContainer header nav {
     display: block !important;
@@ -213,6 +219,13 @@ body .outerContainer .innerContainer header .container .openmenu .menu {
   }
   body .outerContainer .innerContainer .openmenu .menu {
     display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  body .outerContainer .innerContainer header nav {
+    right: 0;
+    width: 120vw;
   }
 }
 
